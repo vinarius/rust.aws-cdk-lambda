@@ -169,6 +169,9 @@ export function build(options: BuildOptions): void {
                 ...extra_args!,
             ];
 
+            console.log('spawning sync child process...');
+            console.log(`cargo ${args.join(' ')}`);
+
             const cargo = spawnSync('cargo', args, {
                 cwd: options.entry,
                 env: buildEnv,

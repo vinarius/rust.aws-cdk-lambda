@@ -1,5 +1,5 @@
 {
-    "name": "rust.aws-cdk-lambda",
+    "name": "vin.rust.aws-cdk-lambda",
     "version": "1.2.2",
     "description": "A CDK (v2) Construct Library for AWS Lambda in Rust",
     "main": "dist/index.js",

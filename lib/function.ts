@@ -74,7 +74,7 @@ export class RustFunction extends Function {
         let executable: string;
         let binName: string | undefined;
         if (props.package) {
-            binName = undefined;
+            // binName = undefined;
             executable = props.package;
         } else {
             binName = props.bin || getPackageName(entry);
