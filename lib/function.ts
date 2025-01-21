@@ -81,7 +81,7 @@ export class RustFunction extends Function {
             executable = binName;
         }
 
-        const handlerDir = join(buildDir, executable);
+        const handlerDir = props.package ? buildDir : join(buildDir, executable);
 
         // Check if we really need to build with `cargo-lambda`.
 
